@@ -1,0 +1,11 @@
+import java.util.*
+fun main()
+{
+    var sc=Scanner(System.`in`)
+    val x=sc.nextInt()
+    val y=sc.nextInt()
+    
+    val z=x+y
+    
+    println("The sum of $x + $y is $z")
+}

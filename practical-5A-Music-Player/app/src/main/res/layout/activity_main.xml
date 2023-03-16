@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="30dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="My Music Player!" />
+
+    <ImageView
+        android:id="@+id/imgv"
+        android:layout_width="286dp"
+        android:layout_height="286dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/spotify" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom">
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/play"
+            android:layout_marginHorizontal="30dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_baseline_play_arrow_24"/>
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/pause"
+            android:layout_marginHorizontal="30dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_baseline_pause_24"/>
+
+        <ImageButton
+            android:id="@+id/stop"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="30dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_baseline_stop_24" />
+    </LinearLayout>
+</LinearLayout>

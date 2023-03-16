@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="30dp"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/edittxt"
+        android:textSize="20sp"
+        android:text="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"
+        android:layout_marginBottom="40dp"
+        android:hint="Copy paste your video location" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:text="Click Here To Download video"
+        android:gravity="center"/>
+    <VideoView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:id="@+id/vv"/>
+
+</LinearLayout>
